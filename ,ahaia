@@ -1,0 +1,32 @@
+package Mahaia;
+
+public class Mahaia{
+	 private static Mahaia nireMahaia = null;
+	 private Mahaia() { }
+	 public static Mahaia getMahaia()
+	 {
+	 if (nireMahaia==null) 
+	{
+	nireMahaia = new Mahaia();
+	}
+	 return nireMahaia;
+	 }
+	}
+	------------------------
+	------------------------
+	private mahaia mahaia()
+	{
+	}
+	public KartaZerrenda itzuliKartak()
+	{
+	if (Mazoa=null){
+	Mazoa=mKartak;
+	mKartak==null;
+	}
+	}
+	public Kartak itzuliKarta()
+	{
+	}
+	public void gehituKarta(pKarta Karta)
+	{
+	
