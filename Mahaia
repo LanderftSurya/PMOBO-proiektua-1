@@ -33,12 +33,4 @@ public class Mahaia {
     public void setKartakMahaian(List<Karta> kartakMahaian) {
         this.kartakMahaian = kartakMahaian;
     }
-
-    public Mazoa getMazoa() {
-        return mazoa;
-    }
-
-    public void setMazo(Mazo mazo) {
-        this.mazo = mazo;
-    }
 }
