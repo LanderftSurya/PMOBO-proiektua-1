@@ -1,36 +1,34 @@
+package Mahaia;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 
 public class Mahaia {
-    private List<Karta> KartakMahaian;
-    private Mazoa mazoa;
+    private KartaZerrenda mKartak;
+    private Mahaia mahaia;
+    private static Mahaia nireMahaia = null;
 
-    public Mahaia(Mazoa mazoa) {
-        this.mazoa = mazoa;
-        kartakMahaian = new ArrayList<>();
+
+    private Mahaia() {
+        nireMahaia = new ArrayList<>();
     }
+
+
+    public static Mahaia getNireMahaia() {
+        if (nireMahaia == null) {
+            nireMahaia = new Mahaia();
+        }
+        return nireMahaia;
+    }
+
+    		
+
+
+   
+
+
+
 
     public void GehituKarta(Karta karta) {
-        kartakMahaian.add(karta);
+        nireMahaia.add(karta);
     }
-
-    public Karta ItzuliKarta(int inditzea) {
-        if (inditzea >= 0 && indice < kartakMahaian.size()) {
-            return kartakMahaian.remove(indice);
-        } else {
-            return null; 
-        }
-    }
-
-    public List<Karta> ItzuliKartak() {
-        List<karta> kartasItzuliak = new ArrayList<>(kartakMahaian);
-        kartaItzuliak.clear();
-        return kartaItzuliak;
-    }
-
-    public List<Karta> getKartakMahaian() {
-        return KartakMahaian;
-    }
-
-    public void setKartakMahaian(List<Karta> kartakMahaian) {
-        this.kartakMahaian = kartakMahaian;
-    }
-}
