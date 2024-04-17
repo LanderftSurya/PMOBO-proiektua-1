@@ -1,0 +1,44 @@
+
+public class Mahaia {
+    private List<Karta> KartakMahaian;
+    private Mazoa mazoa;
+
+    public Mahaia(Mazoa mazoa) {
+        this.mazoa = mazoa;
+        kartakMahaian = new ArrayList<>();
+    }
+
+    public void GehituKarta(Karta karta) {
+        kartakMahaian.add(karta);
+    }
+
+    public Karta ItzuliKarta(int inditzea) {
+        if (inditzea >= 0 && indice < kartakMahaian.size()) {
+            return kartakMahaian.remove(indice);
+        } else {
+            return null; 
+        }
+    }
+
+    public List<Karta> ItzuliKartak() {
+        List<karta> kartasItzuliak = new ArrayList<>(kartakMahaian);
+        kartaItzuliak.clear();
+        return kartaItzuliak;
+    }
+
+    public List<Karta> getKartakMahaian() {
+        return KartakMahaian;
+    }
+
+    public void setKartakMahaian(List<Karta> kartakMahaian) {
+        this.kartakMahaian = kartakMahaian;
+    }
+
+    public Mazoa getMazoa() {
+        return mazoa;
+    }
+
+    public void setMazo(Mazo mazo) {
+        this.mazo = mazo;
+    }
+}
